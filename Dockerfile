@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libreadline-dev \
     libonig-dev \
+    libzip-dev \
     sudo \
     unzip \
     zip \
