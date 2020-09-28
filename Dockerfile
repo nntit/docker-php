@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libmcrypt-dev \
     libpng-dev \
     libreadline-dev \
+    libonig-dev \
     sudo \
     unzip \
     zip \
