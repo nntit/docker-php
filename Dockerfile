@@ -1,3 +1,5 @@
 FROM php:7.4-apache
-RUN pecl install mongodb \
-    && docker-php-ext-enable mongodb
+RUN sudo apt-get install libpcre3-dev \
+    && pecl install mongodb \
+    && pecl install phalcon \
+    && docker-php-ext-enable mongodb phalcon
