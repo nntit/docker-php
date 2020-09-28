@@ -1,5 +1,5 @@
 FROM php:7.4-apache
-RUN sudo apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
     libpcre3-dev \
     curl \
     g++ \
