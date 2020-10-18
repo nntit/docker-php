@@ -8,11 +8,13 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     libicu-dev \
     libjpeg-dev \
+    libssl-dev \
     libmcrypt-dev \
     libpng-dev \
     libreadline-dev \
     libonig-dev \
     libzip-dev \
+    pkg-config \
     sudo \
     unzip \
     zip
