@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     sudo \
     unzip \
     zip
-RUN pecl config-set php_ini /etc/php.ini\
+RUN pecl config-set php_ini /etc/php.ini \
     && pecl install mongodb \
     && pecl install phalcon \
     && docker-php-ext-enable mongodb phalcon \
