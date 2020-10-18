@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     sudo \
     unzip \
-    zip \
+    zip
 RUN pecl config-set php_ini /etc/php.ini\
     && pecl install mongodb \
     && pecl install phalcon \
