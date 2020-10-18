@@ -2,6 +2,8 @@ FROM php:7.4-apache
 RUN apt-get update && apt-get install -y \
     libpcre3-dev \
     curl \
+    curl-dev \
+    openssl-dev \
     g++ \
     git \
     libbz2-dev \
@@ -20,6 +22,7 @@ RUN apt-get update && apt-get install -y \
     && pecl install phalcon \
     && docker-php-ext-enable mongodb phalcon \
     && rm -rf /var/lib/apt/lists/*
+RUN pecl config-set php_ini /etc/php.ini
 
 
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
