@@ -2,8 +2,6 @@ FROM php:7.4-apache
 RUN apt-get update && apt-get install -y \
     libpcre3-dev \
     curl \
-    curl-dev \
-    openssl-dev \
     g++ \
     git \
     libbz2-dev \
