@@ -20,8 +20,9 @@ RUN apt-get update && apt-get install -y \
     zip
 RUN pecl config-set php_ini /etc/php.ini \
     && pecl install mongodb \
+    && pecl install psr \
     && pecl install phalcon \
-    && docker-php-ext-enable mongodb phalcon \
+    && docker-php-ext-enable mongodb psr phalcon \
     && rm -rf /var/lib/apt/lists/*
 
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
