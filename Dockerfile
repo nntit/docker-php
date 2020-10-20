@@ -41,4 +41,5 @@ RUN docker-php-ext-install \
     mbstring \
     opcache \
     pdo_mysql \
-    zip
+    zip \
+    gd
