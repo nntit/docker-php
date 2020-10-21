@@ -41,5 +41,18 @@ RUN docker-php-ext-install \
     mbstring \
     opcache \
     pdo_mysql \
+    mysqli \
     zip \
-    gd
+    gd \
+    && docker-php-ext-enable \
+    bcmath \
+    bz2 \
+    calendar \
+    iconv \
+    intl \
+    mbstring \
+    opcache \
+    pdo_mysql \
+    mysqli \
+    zip \
+    gd 
