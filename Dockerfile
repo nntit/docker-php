@@ -40,7 +40,6 @@ RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-av
     && sed -i 's/^\(upload_max_filesize\s*=\s*\).*$/\1700M/' $PHP_INI_DIR/php.ini
 
 RUN a2enmod rewrite headers
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 RUN docker-php-ext-install \
     bcmath \
